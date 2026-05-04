@@ -1,10 +1,10 @@
-#🎓 EduPredict — Student Performance Predictive Analyzer
+🎓 EduPredict — Student Performance Predictive Analyzer
 
 Python Flask Scikit-learn
 
 EduPredict is a full-stack Machine Learning project that predicts student exam scores using a variety of machine learning models, including Linear Regression, Decision Tree, Random Forest, and Gradient Boosting. The project also features a live dashboard, REST API, and integrated cybersecurity layer.
 
-#📁 Project Structure
+📁 Project Structure
 EduPredict/
 ├── run.py                           ← Master launcher (run this!)
 ├── requirements.txt
@@ -47,8 +47,7 @@ EduPredict/
     ├── model_comparison.json        ← R², MAE, RMSE for all 4 models
     ├── audit.log                    ← Security event log (auto-generated)
     └── graphs/evaluation_plot.png   ← Actual vs Predicted + Residual plots
-    
-#🚀 Quick Start
+🚀 Quick Start
 1. Install dependencies
 pip install -r requirements.txt
 2. Launch everything
@@ -57,7 +56,7 @@ python run.py
 
 Flags: --retrain to force re-training · --port 8080 to use a custom port
 
-#🤖 ML Pipeline
+🤖 ML Pipeline
 Step	Script	Description
 1	data/misssing_data.py	Injects missing values into raw dataset
 2	src/data_preprocessing.py	Fills missing values per student
@@ -65,7 +64,6 @@ Step	Script	Description
 4	src/train_model.py	Trains 4 models, saves best by R²
 5	src/evaluate_model.py	Generates metrics + residual plots
 6	src/predict.py	Exposes predict_exam_score() for the API
-
 Engineered Features
 Feature	Formula
 engagement_feature	(Attendance_scaled + Participation) / 2
@@ -85,8 +83,7 @@ Gradient Boosting is the best performing model
 R² Score : 0.9532
 RMSE : 2.5463
 MAE : 2.1466
-
-#🌐 API Endpoints
+🌐 API Endpoints
 Method	Route	Description
 POST	/api/login	Authenticate → receive HMAC token
 GET	/api/analytics	Aggregated dashboard statistics
@@ -96,8 +93,7 @@ GET	/api/student/<id>	Single student profile + monthly records
 GET	/api/model-info	Model comparison results
 GET	/api/security	Security event log & threat stats
 GET	/api/health	Server health check
-
-#🔐 Cybersecurity Features
+🔐 Cybersecurity Features
 Feature	Implementation
 Rate Limiting	60 req/min per IP — returns HTTP 429 on breach
 XSS Protection	Blocks <script>, onerror=, eval(), <iframe>
@@ -119,9 +115,7 @@ viewer / view123
 4	Analytics	Submission, extra-curricular, hours vs score, monthly area charts
 5	ML Model	Model comparison bars, pipeline view, feature importance
 6	Security	Live event feed, threat level, HMAC demo, XSS/rate-limit simulation
-
-#🧰 Tech Stack
+🧰 Tech Stack
 Backend: Python · Flask · Scikit-learn · Pandas · NumPy · Joblib · Faker · Matplotlib
 Frontend: HTML · CSS · JavaScript · Chart.js
----
 
