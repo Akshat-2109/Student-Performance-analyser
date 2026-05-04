@@ -1,10 +1,13 @@
-🎓 EduPredict — Student Performance Predictive Analyzer
-
-Python Flask Scikit-learn
+# 🎓 EduPredict — Student Performance Predictive Analyzer  
+*Python Flask Scikit-learn*
 
 EduPredict is a full-stack Machine Learning project that predicts student exam scores using a variety of machine learning models, including Linear Regression, Decision Tree, Random Forest, and Gradient Boosting. The project also features a live dashboard, REST API, and integrated cybersecurity layer.
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
+```plaintext
 EduPredict/
 ├── run.py                           ← Master launcher (run this!)
 ├── requirements.txt
