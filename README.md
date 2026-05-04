@@ -50,7 +50,8 @@ EduPredict/
     ├── model_comparison.json        ← R², MAE, RMSE for all 4 models
     ├── audit.log                    ← Security event log (auto-generated)
     └── graphs/evaluation_plot.png   ← Actual vs Predicted + Residual plots
-🚀 Quick Start
+
+**##🚀 Quick Start**
 1. Install dependencies
 pip install -r requirements.txt
 2. Launch everything
@@ -59,7 +60,7 @@ python run.py
 
 Flags: --retrain to force re-training · --port 8080 to use a custom port
 
-🤖 ML Pipeline
+**##🤖 ML Pipeline**
 Step	Script	Description
 1	data/misssing_data.py	Injects missing values into raw dataset
 2	src/data_preprocessing.py	Fills missing values per student
@@ -86,7 +87,8 @@ Gradient Boosting is the best performing model
 R² Score : 0.9532
 RMSE : 2.5463
 MAE : 2.1466
-🌐 API Endpoints
+
+**##🌐 API Endpoints**
 Method	Route	Description
 POST	/api/login	Authenticate → receive HMAC token
 GET	/api/analytics	Aggregated dashboard statistics
@@ -96,7 +98,8 @@ GET	/api/student/<id>	Single student profile + monthly records
 GET	/api/model-info	Model comparison results
 GET	/api/security	Security event log & threat stats
 GET	/api/health	Server health check
-🔐 Cybersecurity Features
+
+**##🔐 Cybersecurity Features**
 Feature	Implementation
 Rate Limiting	60 req/min per IP — returns HTTP 429 on breach
 XSS Protection	Blocks <script>, onerror=, eval(), <iframe>
@@ -110,7 +113,8 @@ Demo credentials:
 teacher / teacher123
 admin / admin2024
 viewer / view123
-📊 Dashboard Tabs
+
+**##📊 Dashboard Tabs**
 #	Tab	What's Inside
 1	Dashboard	Stat cards, monthly trend, score distribution, grade doughnut, top 5
 2	Predict Score	Sliders → ML prediction → score ring + breakdown + improvement tips
@@ -118,7 +122,8 @@ viewer / view123
 4	Analytics	Submission, extra-curricular, hours vs score, monthly area charts
 5	ML Model	Model comparison bars, pipeline view, feature importance
 6	Security	Live event feed, threat level, HMAC demo, XSS/rate-limit simulation
-🧰 Tech Stack
+
+**##🧰 Tech Stack**
 Backend: Python · Flask · Scikit-learn · Pandas · NumPy · Joblib · Faker · Matplotlib
 Frontend: HTML · CSS · JavaScript · Chart.js
 
