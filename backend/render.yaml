@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: edupredict-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: FRONTEND_ORIGIN
+        value: "*"
+        # After deploying the frontend on Vercel, replace "*" with your
+        # exact Vercel URL, e.g. https://edupredict.vercel.app
+      - key: EDUPREDICT_SECRET
+        generateValue: true
+        # Used to sign HMAC login tokens — Render will auto-generate a random value.

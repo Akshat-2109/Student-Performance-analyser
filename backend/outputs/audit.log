@@ -1,0 +1,47 @@
+2026-07-14 12:50:17,416 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-14 12:50:17,417 | INFO | [33mPress CTRL+C to quit[0m
+2026-08-06 06:04:42,533 | INFO | [INFO] [ANALYTICS_VIEW] IP=127.0.0.1 | fetched
+2026-08-06 06:04:42,842 | INFO | [INFO] [STUDENTS_LIST] IP=127.0.0.1 | q= count=30000
+2026-08-06 06:04:50,948 | INFO | [INFO] [LOGIN_SUCCESS] IP=127.0.0.1 | user=teacher
+2026-08-06 06:04:50,950 | INFO | [WARNING] [INVALID_INPUT] IP=127.0.0.1 | Test_Score must be between 10 and 30.; Project_Marks must be between 10 and 40.
+2026-08-06 11:37:47,457 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-08-06 11:37:47,458 | INFO | [33mPress CTRL+C to quit[0m
+2026-08-06 11:37:50,176 | INFO | 127.0.0.1 - - [06/Aug/2026 11:37:50] "GET / HTTP/1.1" 200 -
+2026-08-06 11:39:11,563 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-08-06 11:39:11,563 | INFO | [33mPress CTRL+C to quit[0m
+2026-08-06 11:39:16,853 | INFO | 127.0.0.1 - - [06/Aug/2026 11:39:16] "GET / HTTP/1.1" 200 -
+2026-08-06 11:39:20,064 | INFO | 127.0.0.1 - - [06/Aug/2026 11:39:20] "GET / HTTP/1.1" 200 -
+2026-08-06 11:39:42,906 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-08-06 11:39:42,906 | INFO | [33mPress CTRL+C to quit[0m
+2026-08-06 11:42:33,102 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "OPTIONS /api/analytics HTTP/1.1" 200 -
+2026-08-06 11:42:33,103 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "OPTIONS /api/students?per_page=20&page=1&sort=avg_score&order=desc HTTP/1.1" 200 -
+2026-08-06 11:42:33,106 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "OPTIONS /api/analytics HTTP/1.1" 200 -
+2026-08-06 11:42:33,109 | INFO | [INFO] [ANALYTICS_VIEW] IP=127.0.0.1 | fetched
+2026-08-06 11:42:33,112 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "OPTIONS /api/students?per_page=20&page=1&sort=avg_score&order=desc HTTP/1.1" 200 -
+2026-08-06 11:42:33,139 | INFO | [INFO] [STUDENTS_LIST] IP=127.0.0.1 | q= count=30000
+2026-08-06 11:42:33,147 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "GET /api/students?per_page=20&page=1&sort=avg_score&order=desc HTTP/1.1" 200 -
+2026-08-06 11:42:33,173 | INFO | [INFO] [ANALYTICS_VIEW] IP=127.0.0.1 | fetched
+2026-08-06 11:42:33,185 | INFO | [INFO] [STUDENTS_LIST] IP=127.0.0.1 | q= count=30000
+2026-08-06 11:42:33,186 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "GET /api/students?per_page=20&page=1&sort=avg_score&order=desc HTTP/1.1" 200 -
+2026-08-06 11:42:33,370 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "GET /api/analytics HTTP/1.1" 200 -
+2026-08-06 11:42:33,371 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:33] "GET /api/analytics HTTP/1.1" 200 -
+2026-08-06 11:42:43,319 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:43] "OPTIONS /api/predict HTTP/1.1" 200 -
+2026-08-06 11:42:59,291 | INFO | [INFO] [PREDICT] IP=127.0.0.1 | score=69.99 grade=C
+2026-08-06 11:42:59,292 | INFO | 127.0.0.1 - - [06/Aug/2026 11:42:59] "POST /api/predict HTTP/1.1" 200 -
+2026-08-06 11:43:06,777 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:06] "OPTIONS /api/student/15428 HTTP/1.1" 200 -
+2026-08-06 11:43:06,828 | INFO | [INFO] [STUDENT_DETAIL] IP=127.0.0.1 | id=15428
+2026-08-06 11:43:06,828 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:06] "GET /api/student/15428 HTTP/1.1" 200 -
+2026-08-06 11:43:22,563 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:22] "OPTIONS /api/model-info HTTP/1.1" 200 -
+2026-08-06 11:43:22,584 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:22] "GET /api/model-info HTTP/1.1" 200 -
+2026-08-06 11:43:53,181 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:53] "OPTIONS /api/security HTTP/1.1" 200 -
+2026-08-06 11:43:53,184 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:53] "GET /api/security HTTP/1.1" 200 -
+2026-08-06 11:43:58,933 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:58] "OPTIONS /api/predict HTTP/1.1" 200 -
+2026-08-06 11:43:58,936 | INFO | [CRITICAL] [XSS_ATTEMPT] IP=127.0.0.1 | XSS payload in field=Submission_Timeliness
+2026-08-06 11:43:58,936 | INFO | [WARNING] [INVALID_INPUT] IP=127.0.0.1 | Submission_Timeliness must be one of ['On time', 'Late', 'No Submission'].
+2026-08-06 11:43:58,937 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:58] "[31m[1mPOST /api/predict HTTP/1.1[0m" 400 -
+2026-08-06 11:43:58,940 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:58] "OPTIONS /api/security HTTP/1.1" 200 -
+2026-08-06 11:43:58,943 | INFO | 127.0.0.1 - - [06/Aug/2026 11:43:58] "GET /api/security HTTP/1.1" 200 -
